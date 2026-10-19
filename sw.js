@@ -1,5 +1,5 @@
 // Prosty cache offline. Przy zmianie plików gry podbij numer wersji.
-const CACHE = "mozambik-v1";
+const CACHE = "mozambik-v2";
 const FILES = ["./", "index.html", "style.css", "data.js", "app.js", "manifest.webmanifest",
   "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png"];
 
@@ -19,7 +19,7 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: "no-cache" })
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copy));
