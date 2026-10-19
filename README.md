@@ -8,7 +8,6 @@ Gra na telefon: pojedynek na znajomość stolic państw świata.
   Kolega dostaje **te same pytania**, a po swojej grze widzi porównanie wyników
   i może odesłać ci link z rezultatem.
 - **Trening** — gra solo.
-- **Losowy przeciwnik** — w przygotowaniu (wymaga serwera).
 
 Każde pytanie ma 15 sekund. Poprawna odpowiedź daje 100–250 pkt — im szybciej, tym więcej.
 Można wybrać kontynent albo cały świat (194 państwa).

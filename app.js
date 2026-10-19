@@ -190,7 +190,6 @@ function showHome() {
       <div class="actions">
         <button class="btn primary" id="challenge">⚔️ Wyzwij kolegę</button>
         <button class="btn" id="practice">🎯 Trening</button>
-        <button class="btn" disabled>🎲 Losowy przeciwnik <small>wkrótce</small></button>
       </div>
       ${duels.length ? `
         <h2>Twoje pojedynki</h2>
